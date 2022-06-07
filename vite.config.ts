@@ -7,7 +7,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import Pages from "vite-plugin-pages"
 
 export default defineConfig({
-  base: "./", // 根路径
+  base: "/svg-drag-demo/", // 根路径
   // 全局加载的scss文件
   css: {
     preprocessorOptions: {
