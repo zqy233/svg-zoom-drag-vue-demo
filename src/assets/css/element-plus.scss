@@ -1,0 +1,23 @@
+// 这部分用于更改element-plus主题色
+$blue: skyblue;
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": $blue
+    )
+  )
+);
+:export {
+  primaryColor: $blue;
+}
+
+// 这部分定义全局的scss混用
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin background {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
