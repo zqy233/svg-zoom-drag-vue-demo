@@ -1,3 +1,7 @@
+## pages
+
+https://zqy233.github.io/svg-drag-demo/
+
 ## 技术栈/stack
 
 this is a demo based on Vue 3 + TypeScript + Vite
