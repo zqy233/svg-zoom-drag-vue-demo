@@ -41,6 +41,7 @@ const setBling = (id: string) => {
 const svgString = ref("");
 // 在onMounted里面再设置svg字符串的值，达到一个模拟的效果
 onMounted(() => {
+  ``;
   svgString.value = `<svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
