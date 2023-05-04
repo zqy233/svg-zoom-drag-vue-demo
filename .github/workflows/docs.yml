@@ -5,10 +5,10 @@ on:
     branches:
       - master
     paths:
-      - docs/**
+      - src/**
   pull_request:
     paths:
-      - docs/**
+      - src/**
   workflow_dispatch:
     branches:
       - master
