@@ -3,7 +3,9 @@
 </template>
 <script setup lang="ts">
 import { svgText } from "./svgText";
-/** 创建 animate 元素，从而设置svg指定节点的设置闪络动画 */
+/**
+ * 创建 animate 元素，从而设置svg指定节点的设置闪络动画
+ */
 const setBling = (id: string) => {
   const doms = document.querySelectorAll(id);
   for (let i = 0; i < doms.length; i++) {
