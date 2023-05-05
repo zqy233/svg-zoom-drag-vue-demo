@@ -34,7 +34,7 @@ export function svgDrag(app: App) {
     let ratio = 1; // 拖动速度与大小的比例
     let sgvDom: SVGAElement; // svg元素
     let viewBox: string; // svg的viewbox属性
-    let arrPoint: string[]; // svg的viewbox属性的值
+    let arrPoint: number[]; // svg的viewbox属性的值
     // 鼠标按下表示开始移动
     el.onmousedown = () => {
       isStartMoveSvg = true;
@@ -42,9 +42,9 @@ export function svgDrag(app: App) {
       // 因为使用v-html渲染svg，所以绑定命令的dom的子元素才是svg元素
       sgvDom = el.firstChild as SVGAElement;
       viewBox = sgvDom.getAttribute("viewBox") as string;
-      arrPoint = viewBox.split(/\s+/);
+      arrPoint = viewBox.split(/\s+/).map(parseFloat);
       // 根据大小动态调整拖动速度，不然越小越难拖动
-      ratio = Number(arrPoint[2]) / width;
+      ratio = arrPoint[2] / width;
       if (ratio < 1) ratio = 1;
     };
     // 鼠标松开表示结束移动
@@ -59,8 +59,8 @@ export function svgDrag(app: App) {
         debounce = false;
         if (isStartMoveSvg) {
           if (clientX !== 0 && clientY !== 0) {
-            arrPoint[0] = String(Number(arrPoint[0]) - (e.clientX - clientX) * ratio);
-            arrPoint[1] = String(Number(arrPoint[1]) - (e.clientY - clientY) * ratio);
+            arrPoint[0] = arrPoint[0] - (e.clientX - clientX) * ratio;
+            arrPoint[1] = arrPoint[1] - (e.clientY - clientY) * ratio;
             sgvDom.setAttribute("viewBox", arrPoint.join(" "));
           }
           clientX = e.clientX;
