@@ -1,6 +1,6 @@
 module.exports = {
   // 指定换行的行长<int>，默认80
-  printWidth: 80,
+  printWidth: 180,
 
   // 指定每个缩进级别的空格数<int>，默认2
   tabWidth: 2,
