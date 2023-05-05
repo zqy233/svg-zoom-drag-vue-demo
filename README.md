@@ -10,12 +10,15 @@ drag the SVG image by holding down the mouse and moving the cursor.
 
 通过按住鼠标并移动光标来拖动 SVG 图像。
 
+## demo github pages
+> https://zqy233.github.io/svg-zoom-drag-vue-demo/#/
+
+## `svg-zoom-drag-vue-directives` library
+
 > https://github.com/zqy233/svg-zoom-drag-vue-directives
 
 > https://www.npmjs.com/package/svg-zoom-drag-vue-directives?activeTab=readme
 
-## github pages
-> https://zqy233.github.io/svg-zoom-drag-vue-demo/#/
 
 
 
