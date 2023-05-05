@@ -1,5 +1,6 @@
 import { App } from "vue";
 
+/** 控制svg图片放大缩小，原理在于设置svg的viewbox属性，viewbox的第三个参数控制左右大小，第四个参数设置上下大小 */
 export function svgWheel(app: App) {
   app.directive("svgWheel", (el: HTMLElement) => {
     if (el) {
