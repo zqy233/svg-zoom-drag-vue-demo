@@ -6,7 +6,7 @@ drag the SVG image by holding down the mouse and moving the cursor.
 
 这是一个使用 `svg-zoom-drag-vue-directives` 库的演示。
 
-可以使用鼠标滚轮控制 SVG 图像的缩放。
+使用鼠标滚轮控制 SVG 图像的缩放。
 
 通过按住鼠标并移动光标来拖动 SVG 图像。
 
