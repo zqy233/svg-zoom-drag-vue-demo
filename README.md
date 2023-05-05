@@ -4,7 +4,7 @@ control the zoom in and out of an SVG image using the mouse wheel.
 
 drag the SVG image by holding down the mouse and moving the cursor.
 
-这是一个使用 svg-zoom-drag-vue-directives 库的演示。
+这是一个使用 `svg-zoom-drag-vue-directives` 库的演示。
 
 可以使用鼠标滚轮控制 SVG 图像的缩放。
 
