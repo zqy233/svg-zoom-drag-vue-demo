@@ -12,7 +12,10 @@ const setBling = (id: string) => {
     // 在使用 createElementNS() 方法创建 SVG 元素时，需要使用正确的命名空间URI，以确保浏览器能够正确地解析和渲染 SVG 元素及其属性
     // "http://www.w3.org/2000/svg" 是一个 URL 地址，表示 SVG（Scalable Vector Graphics，可缩放矢量图形）命名空间的标识符。
     // 在使用 JavaScript 操作 SVG 元素时，需要在创建元素之前指定所使用的命名空间，以确保正确解析元素和属性。因此，我们在创建 animate 元素时，使用 document.createElementNS() 方法，并传递 "http://www.w3.org/2000/svg" 作为命名空间的标识符，以告诉浏览器创建一个 SVG 元素
-    const animateGraph = document.createElementNS("http://www.w3.org/2000/svg", "animate");
+    const animateGraph = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "animate"
+    );
     // 各个属性的含义：
     // attributeName：指定要应用动画的属性名称。在此代码段中，我们将其设置为 "visibility"，以使 animate 元素控制 SVG 元素的可见性。
     // from：指定动画的起始值。在此代码段中，我们将其设置为 "visible"，以使 SVG 元素一开始是可见的。
