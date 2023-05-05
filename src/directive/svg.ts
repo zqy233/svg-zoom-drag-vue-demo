@@ -1,29 +1,5 @@
 import { App } from "vue";
 
-/** 控制svg图片放大缩小，原理在于设置svg的viewbox属性，viewbox的第三个参数控制左右大小，第四个参数设置上下大小 */
-// export function svgWheel(app: App) {
-//   app.directive("svgWheel", (el: HTMLElement) => {
-//     if (el) {
-//       el.onwheel = (e: WheelEvent) => {
-//         // 因为使用v-html渲染svg，所以绑定命令的dom的子元素才是svg元素
-//         const sgvDom = el.firstChild as SVGAElement;
-//         // 获取svg的viewbox属性
-//         const viewBox = sgvDom.getAttribute("viewBox") as string;
-//         const arrPoint = viewBox.split(/\s+/);
-//
-//         // 应根据视图框大小设置拖动速度
-//         if (e.deltaY < 0) {
-//           arrPoint[2] = parseInt(arrPoint[2]) * 0.9 + "";
-//           arrPoint[3] = parseInt(arrPoint[3]) * 0.9 + "";
-//         } else {
-//           arrPoint[2] = parseInt(arrPoint[2]) / 0.9 + "";
-//           arrPoint[3] = parseInt(arrPoint[3]) / 0.9 + "";
-//         }
-//         sgvDom.setAttribute("viewBox", arrPoint.join(" "));
-//       };
-//     }
-//   });
-// }
 export function svgWheel(app: App) {
   app.directive("svgWheel", (el: HTMLElement) => {
     if (el) {
