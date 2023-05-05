@@ -7,7 +7,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import Pages from "vite-plugin-pages";
 
 export default defineConfig({
-  base: "/svg-drag-demo/", // 根路径
+  base: "/svg-zoom-drag-vue-demo/", // 根路径
   // 全局加载的scss文件
   css: {
     preprocessorOptions: {
@@ -55,6 +55,11 @@ export default defineConfig({
     },
   },
   server: {
+    // https://vitejs.dev/config/server-options.html#server-fs-allow
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: [".."],
+    },
     open: true, // 是否自动打开浏览器
   },
 });

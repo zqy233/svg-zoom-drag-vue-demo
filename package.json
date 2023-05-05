@@ -1,5 +1,5 @@
 {
-  "name": "vue-project-name",
+  "name": "svg-zoom-drag-vue-demo",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "element-plus": "^2.3.4",
+    "svg-zoom-drag-vue-directives": "^1.0.6",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
