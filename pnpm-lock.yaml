@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   svg-zoom-drag-vue-directives:
-    specifier: ^1.0.6
-    version: 1.0.6(vue@3.2.47)
+    specifier: ^1.0.8
+    version: 1.0.8(vue@3.2.47)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -1606,8 +1606,8 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svg-zoom-drag-vue-directives@1.0.6(vue@3.2.47):
-    resolution: {integrity: sha512-Ig90pS54YOrtQqQ5C9cgDHQmCEcKC9zu4s62gW0PEtcNwsUA6mbdcK/v9EAmgmUvaJKXsd0PwgLunNSMvo+lNg==}
+  /svg-zoom-drag-vue-directives@1.0.8(vue@3.2.47):
+    resolution: {integrity: sha512-7fO6D9H9CHeA3Bgc3axSmIpu2hEgk37QYDMqpg7STBD/MJUsFMXu72Bzr4WdFwzm/ONZ+ZsqKUHixlosgG3d5A==}
     dependencies:
       vue-demi: 0.14.0(vue@3.2.47)
     transitivePeerDependencies:
